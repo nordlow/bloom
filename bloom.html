@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Module bloom</title>
+		<link rel="stylesheet" href="./css/style.min.css"/>
+		<script type="text/javascript" src="./js/script.min.js"></script>
+	</head>
+	<body onload="setupDdox();">
+		<header>
+		</header>
+		<nav id="main-nav">
+				<noscript>
+					<p style="color: red">The search functionality needs JavaScript enabled</p>
+				</noscript>
+				<div id="symbolSearchPane" style="display: none">
+					<input id="symbolSearch" type="text" placeholder="Search" onchange="performSymbolSearch(24);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();" autofocus="autofocus"/>
+					<ul id="symbolSearchResults" style="display: none"></ul>
+					<script type="application/javascript" src="./symbols.js"></script>
+					<script type="application/javascript">
+var symbolSearchRootDir = "./";
+document.getElementById('symbolSearchPane').style.display = 'block';
+					</script>
+				</div>
+						<ul class="tree-view">
+							<li>
+								<a href="./bloom.html" class="selected module">bloom</a>
+							</li>
+						</ul>
+			<p id="main-nav-footer">
+ Built with
+				<a href="https://github.com/MartinNowak/scod">scod</a>
+			</p>
+		</nav>
+		<div id="main-contents">
+			<h1>Module bloom</h1>
+			<p>A <code class="lang-d"><span class="pln">bloom</span></code> filter implementation
+</p>
+<section></section>
+
+			<section></section>
+			<section>
+				<h2>Structs</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="BloomFilter" class="public" href="./bloom/BloomFilter.html">
+								<code>BloomFilter</code>
+							</a>
+						</td>
+						<td>A <a href="./bloom.html"><code class="lang-d"><span class="pln">bloom</span></code></a> filter is a fast and space-efficient probabilistic data
+ structure to <a href="./bloom/BloomFilter.test.html"><code class="lang-d"><span class="pln">test</span></code></a> whether an element is member of a set.
+ False positive matches are possible, false negative matches are not.
+ Elements can only be added not removed.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Aliases</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="CheapHash" class="public" href="./bloom/CheapHash.html">
+								<code>CheapHash</code>
+							</a>
+						</td>
+						<td>
+<code class="prettyprint lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">typecons<wbr/></span><span class="pun">.</span><span class="typ">Flag</span>!("cheapHash")</code>
+						</td>
+						<td><a href="http://dlang.org/phobos/std_typecons.html#.Flag">Flag</a> to specify whether or not a cheaper hash is used.
+</td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+				<hr/>
+				<div id="license-info">
+<p>Martin Nowak
+</p>
+
+<p>© 2013 - 2016 Martin Nowak
+</p>
+
+<p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>
+</p>
+
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
